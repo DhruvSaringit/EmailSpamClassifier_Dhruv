@@ -8,7 +8,7 @@ TF-IDF Vectorization for text representation
 Machine Learning Model using Scikit-Learn
 Deployed-ready with a Procfile and setup.sh script
 
- Tech Stack
+Tech Stack
 Python
 Streamlit (For UI)
 NLTK (For NLP processing)
