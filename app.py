@@ -6,35 +6,32 @@ from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 import nltk
 
-# Download required NLTK resources
 nltk.download('punkt', quiet=True)
 nltk.download('stopwords', quiet=True)
 
-# Your existing code here
 
 nltk.download('punkt')
 nltk.download('stopwords')
 import nltk
 import os
 
-# Create a directory for NLTK data if it doesn't exist
+
 nltk_data_dir = os.path.expanduser("~/.nltk_data")
 if not os.path.exists(nltk_data_dir):
     os.makedirs(nltk_data_dir)
 
-# Download necessary NLTK resources
+
 nltk.download('punkt', download_dir=nltk_data_dir)
 nltk.download('stopwords', download_dir=nltk_data_dir)
 
-# Add NLTK data directory to the NLTK path
 nltk.data.path.append(nltk_data_dir)
 
-# Your existing code follows here...
+
 
 ps = PorterStemmer()
 #by Dhruv Sarin
 
-# Text transformation function
+# Text transformationfunction
 def transform_text(text):
     text = text.lower()
     text = nltk.word_tokenize(text)
@@ -197,4 +194,5 @@ elif page == "Contact":
     - **Email:** dhruvsarin21@gmail.com
     - **LinkedIn:** (https://www.linkedin.com/in/dhruv-sarin-b97666286/)
     """)
+
     st.write("</div>", unsafe_allow_html=True)
